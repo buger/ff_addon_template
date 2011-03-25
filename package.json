@@ -1,0 +1,11 @@
+{
+    "templatedir": "extension", 
+    "name": "jetpack_xul", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "", 
+    "id": "jid0-IqTRXaCOez4eRl9nE76oWp1G2iE", 
+    "version": "0.1", 
+    "fullName": "jetpack_xul", 
+    "harnessClassID": "c1d5bf13-29d5-4dcd-9f42-765ae1f0c2f0", 
+    "description": "a basic add-on"
+}

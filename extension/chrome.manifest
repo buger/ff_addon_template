@@ -1,0 +1,16 @@
+# This registers the 'harness' component, which is the entry point
+# for the Addon SDK-based part of the extension.
+component {c1d5bf13-29d5-4dcd-9f42-765ae1f0c2f0} components/harness.js
+contract @mozilla.org/harness-service;1?id=jid0-IqTRXaCOez4eRl9nE76oWp1G2iE {c1d5bf13-29d5-4dcd-9f42-765ae1f0c2f0}
+category profile-after-change jetpack_xul-harness @mozilla.org/harness-service;1?id=jid0-IqTRXaCOez4eRl9nE76oWp1G2iE
+
+content   minus                 chrome/content/
+skin      minus   classic/1.0   chrome/skin/
+locale    minus   en-US         chrome/locale/en-US/
+
+overlay   chrome://browser/content/browser.xul   chrome://minus/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://minus/skin/overlay.css
+
+# This is used in tests/test-module.js to test that chrome.manifest
+# was loaded for this extension.
+resource jetpack_xul-res modules/
